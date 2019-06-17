@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  var isMobile = {
+    android: function() {
+      return navigator.userAgent.match(/Android/i);
+    },
+    iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+  };
+  if ( isMobile.iOS() ) {
+    document.location.href = "https://itunes.apple.com/kr/app/mobil/id1006763538?mt=8";
+  }
+  else if( isMobile.android() ) {
+    document.location.href = "https://play.google.com/store/apps/details?id=com.movill.app";
+  }
+</script>
